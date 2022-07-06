@@ -90,3 +90,9 @@ Este reto será evaluado sobre lo siguiente:
 * Indentación
 * Archivo `README.md` actualizado y correctamente redactado
 * Uso de comentarios para hacer tu código más legible
+
+
+https://getuikit.com/docs/accordion
+https://materializecss.com/getting-started.html
+https://purecss.io/tools/
+https://styled-components.com/docs/basics#installation

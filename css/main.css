@@ -1,3 +1,40 @@
-/*
- * Estilos de tu proyecto
- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --color-buttons-hover: #FF00BF;
+  --color-footer-bg: #333447;
+  --color-form-title: #352384;
+  --color-form-text: #728099;
+  --color-purple-gradient: linear-gradient(#76278F, #2B1E66);
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+}
+html{
+  font-family: var(--font-montserrat);
+}
+/* header */
+header{
+  background: no-repeat center/100% url("../assets/images/hero.gif");
+  font-weight: 400;
+}
+nav{
+  background-color: transparent;
+}
+.brand-logo{
+  margin-left: 4rem;
+}
+.logo-white {
+  width: 50px;
+  vertical-align: middle;
+}
+nav ul {
+  margin: 0 5rem;
+}
+.btn-login {
+  color: var(--color-white);
+  border-radius: 5px;
+  border: 1px solid var(--color-white);
+  background-color: transparent;
+  padding: 5px 10px;
+}
