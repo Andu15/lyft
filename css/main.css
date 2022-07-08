@@ -13,8 +13,11 @@
 html{
   font-family: var(--font-montserrat);
 }
-/* header */
+
+@media (min-width: 1024px) {
+  /* header */
 header{
+  position: relative;
   background: no-repeat center/100% url("../assets/images/hero.gif");
   font-weight: 400;
 }
@@ -29,7 +32,7 @@ nav{
   vertical-align: middle;
 }
 nav ul {
-  margin: 0 5rem;
+  margin: 0 10.9rem;
 }
 .btn-login {
   color: var(--color-white);
@@ -37,4 +40,60 @@ nav ul {
   border: 1px solid var(--color-white);
   background-color: transparent;
   padding: 5px 10px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  width: 100vw;
+}
+.introduction-container {
+  background-color: var(--color-white);
+  width: 45%;
+  padding: 55px 50px 20px 50px;
+}
+.introduction-title {
+  color: var(--color-form-title);
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 70%;
+  font-size: 35px;
+  line-height: .9;
+  margin: 0;
+}
+.introduction-description {
+  color: var(--color-form-title);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+.introduction-input-phone {
+  border-bottom: 1px solid var(--color-form-title) !important;
+}
+.introduction-input-phone:focus {
+  border-bottom: 1px solid var(--color-form-title) !important;
+  box-shadow: none !important;
+}
+.btns-container {
+  margin: 20px 0;
+}
+.btn-driver {
+  background-color: var(--color-buttons-hover);
+  border-radius: 5px;
+  padding: 14px;
+  color: var(--color-white);
+  margin-right: 15px;
+  font-weight: 200;
+  font-size: 15px;
+}
+.btn-ride {
+  color: var(--color-form-text);
+  text-decoration: underline var(--color-form-text);
+  font-weight: 400;
+}
+.introduction-subtitle {
+  color: var(--color-form-text);
+  font-size: 8px;
+}
 }
