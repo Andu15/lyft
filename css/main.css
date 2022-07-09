@@ -14,15 +14,20 @@ html{
   font-family: var(--font-montserrat);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   /* header */
 header{
-  position: relative;
   background: no-repeat center/100% url("../assets/images/hero.gif");
   font-weight: 400;
+  background-position: bottom;
+  background-size: 100%;
+  height: 670px;
+  width: 100%;
 }
 nav{
   background-color: transparent;
+  height: 70px;
+  /* transform: translateY(20%); */
 }
 .brand-logo{
   margin-left: 4rem;
@@ -47,11 +52,13 @@ nav ul {
   justify-content: flex-end;
   background-color: transparent;
   width: 100vw;
+  overflow: auto;
 }
 .introduction-container {
   background-color: var(--color-white);
   width: 45%;
-  padding: 55px 50px 20px 50px;
+  padding: 75px 60px 40px 60px;
+  height: 500px;
 }
 .introduction-title {
   color: var(--color-form-title);
@@ -95,5 +102,47 @@ nav ul {
 .introduction-subtitle {
   color: var(--color-form-text);
   font-size: 8px;
+}
+
+.gradient {
+  background: linear-gradient(transparent, #76278f);
+  height: 100px;
+}
+
+.presentation {
+  background: var(--color-purple-gradient);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0;
+}
+.presentation-container {
+  padding-left: 10rem;
+  padding-right: 4rem;
+}
+.presentation-title {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 0.3;
+}
+.presentation-subtitle {
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+}
+.mr-t {
+  margin-top: 100px;
+}
+.mr-b {
+  margin-bottom: 30px;
+}
+
+.img-phone {
+  height: 70vh;
+  padding-right: 10rem;
 }
 }
