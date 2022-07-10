@@ -1,7 +1,29 @@
 # Lyft
 Layout challenge with HTML and materializecss
 
+## Indice
+- [Lyft](#lyft)
+  - [Indice](#indice)
+    - [Information:](#information)
+    - [Description:](#description)
+    - [Reference Images](#reference-images)
+  - [Flujo de trabajo](#flujo-de-trabajo)
+  - [Objetivo](#objetivo)
+  - [Consideraciones](#consideraciones)
+  - [A tener en cuenta](#a-tener-en-cuenta)
+*** 
+### Information:
+  ***Theme:*** Common Core  
+  ***Autor:*** Andu15  
+  ***Created:*** 07/22  
+  ***Version:*** 1.0.0 
+### Description:  
+This repository aims to challenge my knowledge to obtain a replica of a reference image
+Remark: the reference image does not belong to me
+### Reference Images
+![image1](assets/../docs/fullpage.png)
 
+Note: the credits to whom it corresponds
 
 
 
