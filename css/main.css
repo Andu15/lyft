@@ -14,15 +14,9 @@ html{
   font-family: var(--font-montserrat);
 }
 
-@media (min-width: 1440px) {
-  /* header */
+/* estilos */
 header{
-  background: no-repeat center/100% url("../assets/images/hero.gif");
-  font-weight: 400;
-  background-position: bottom;
-  background-size: 100%;
-  height: 670px;
-  width: 100%;
+  background: var(--color-purple-gradient);
 }
 nav{
   background-color: transparent;
@@ -30,40 +24,28 @@ nav{
 }
 .brand-logo{
   margin-left: 4rem;
+  -webkit-transform: none !important;
+  left: 0 !important;
+  transform: none !important;
 }
 .logo-white {
   width: 50px;
   vertical-align: middle;
 }
-nav ul {
-  margin: 0 18rem;
-}
-.btn-login {
-  color: var(--color-white);
-  border-radius: 5px;
-  border: 1px solid var(--color-white);
-  background-color: transparent;
-  padding: 5px 10px;
-}
-
 .introduction {
-  display: flex;
-  justify-content: flex-end;
   background-color: transparent;
   width: 100vw;
   overflow: auto;
 }
 .introduction-container {
   background-color: var(--color-white);
-  width: 40%;
-  padding: 75px 60px 40px 60px;
-  height: 500px;
+  width: 100%;
+  padding: 4rem;
 }
 .introduction-title {
   color: var(--color-form-title);
   text-transform: uppercase;
   font-weight: 600;
-  width: 70%;
   font-size: 35px;
   line-height: .9;
   margin: 0;
@@ -87,72 +69,64 @@ nav ul {
 .btn-driver {
   background-color: var(--color-buttons-hover);
   border-radius: 5px;
-  padding: 14px;
+  padding: 10px;
   color: var(--color-white);
   margin-right: 15px;
   font-weight: 200;
   font-size: 15px;
+  margin-bottom: 15px;
 }
 .btn-ride {
   color: var(--color-form-text);
   text-decoration: underline var(--color-form-text);
   font-weight: 400;
+  margin: auto 5px;
 }
 .introduction-subtitle {
   color: var(--color-form-text);
   font-size: 8px;
 }
-
-.gradient {
-  background: linear-gradient(transparent, #76278f);
-  height: 100px;
-}
-
 .presentation {
   background: var(--color-purple-gradient);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-items: center;
   align-items: center;
   justify-content: center;
-  padding: 8rem 0;
+  padding: 2rem 0;
 }
 .presentation-container {
-  padding-left: 10rem;
-  padding-right: 4rem;
+  width: 80%;
+  padding: 2rem;
 }
 .presentation-title {
   color: var(--color-white);
   font-weight: 500;
   font-size: 30px;
-  line-height: 0.3;
+  line-height: 0.9;
 }
 .presentation-subtitle {
   color: var(--color-white);
   font-weight: 400;
   font-size: 15px;
-  margin: 0;
 }
 .mr-t {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .mr-b {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
-
 .img-phone {
-  height: 70vh;
-  padding-right: 10rem;
+  height: 40vh;
 }
-
 .container-section {
   display: grid;
 }
 .column-min-max {
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr;
 }
-.column-max-min {
-  grid-template-columns: 70% 30%;
+.video-container {
+  display: none;
 }
 .text-container {
   padding: 2rem 3rem;
@@ -171,12 +145,14 @@ nav ul {
   font-weight: 500;
   font-size: 15px;
 }
-
 .footer {
   background-color: var(--color-footer-bg);
 }
 .dowloand-icon {
-  width: 120px;
+  width: 50px;
+}
+.row {
+  display: none;
 }
 .icons-container {
   display: flex;
@@ -196,5 +172,115 @@ nav ul {
 .copyright {
   text-align: center;
   margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .presentation {
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr;
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introduction {
+    background: no-repeat center/100% url("../assets/images/hero.gif"); 
+    display: flex;
+    justify-content: flex-end;
+  }
+  .introduction-container {
+    width: 40%;
+    padding: 75px 60px 40px 60px;
+    height: 500px;
+  }
+  .btn-login {
+    color: var(--color-white);
+    border-radius: 5px;
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    padding: 5px 10px;
+  }
+  .row {
+    display: block;
+  }
+  .dowloand-icon {
+    width: 90px;
+  }
+  .video-container {
+    display: block;
+  }
+  .column-min-max {
+    grid-template-columns: 30% 70%;
+  }
+  .column-max-min {
+    grid-template-columns: 70% 30%;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* header */
+header{
+  background: no-repeat center/100% url("../assets/images/hero.gif");
+  font-weight: 400;
+  background-position: bottom;
+  height: 670px;
+  width: 100%;
+}
+nav ul {
+  margin: 0 18rem;
+}
+
+.introduction {
+  background: transparent;
+}
+.introduction-title {
+  width: 70%;
+}
+.btn-driver {
+  padding: 14px;
+}
+.btn-ride {
+  padding-bottom: 18px;
+}
+.introduction-subtitle {
+  font-size: 11px;
+}
+
+.gradient {
+  background: linear-gradient(transparent, #76278f);
+  height: 100px;
+}
+
+.presentation {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 8rem 0;
+}
+.presentation-container {
+  width: 100%;
+  padding-left: 10rem;
+  padding-right: 4rem;
+}
+.presentation-title {
+  line-height: 0.3;
+  font-size: 25px;
+}
+.presentation-subtitle {
+  margin: 0;
+}
+.mr-t {
+  margin-top: 100px;
+}
+.mr-b {
+  margin-bottom: 30px;
+}
+
+.img-phone {
+  height: 70vh;
+  padding-right: 10rem;
+}
+
+.dowloand-icon {
+  width: 120px;
 }
 }
