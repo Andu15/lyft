@@ -7,10 +7,11 @@
     "materialize-css": "^1.0.0-rc.2"
   },
   "author": "Andu15",
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  },
   "scripts": {
-    "deploy": "gh-pages -d index.html"
+    "deploy": "gh-pages-deploy -- 'deploy successful'",
+    "clean-source": "rimraf README.md src webroot package.json"
+  },
+  "devDependencies": {
+    "gh-pages-deploy": "^0.5.1"
   }
 }
