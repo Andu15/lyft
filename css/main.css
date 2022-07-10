@@ -215,6 +215,10 @@ nav{
   .column-max-min {
     grid-template-columns: 70% 30%;
   }
+  .refs:hover {
+    cursor: pointer;
+    color: var(--color-buttons-hover) !important;
+  }
 }
 
 @media (min-width: 1440px) {
